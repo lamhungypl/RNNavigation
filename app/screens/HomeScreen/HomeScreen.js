@@ -13,14 +13,17 @@ const HomeScreen = props => {
   return (
     <ScrollView>
       <SafeAreaView style={styles.container}>
-        <Text>HomeScreen</Text>
+        <Text>HomeScreens</Text>
         <TouchableOpacity onPress={() => props.navigation.navigate('Force')}>
-          <Text>Detail</Text>
+          <Text>Force</Text>
         </TouchableOpacity>
         <View style={styles.weatherDetail}>
           <View style={{borderRightWidth: 1, flex: 1}}>
-            <WeatherDetailCard iconName="wind" iconType="feather" />
-            <WeatherDetailCard iconName="sun" iconType="feather" />
+            {/* <WeatherDetailCard iconName="wind" iconType="feather" />
+            <WeatherDetailCard iconName="sun" iconType="feather" /> */}
+
+            <WeatherDetailCard iconName="gauge" iconType="entypo" />
+            <WeatherDetailCard iconName="gauge" iconType="entypo" />
           </View>
           <View style={{borderLeftWidth: 1, flex: 1}}>
             <WeatherDetailCard iconName="gauge" iconType="entypo" />

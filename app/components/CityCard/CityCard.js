@@ -1,8 +1,13 @@
+import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
+import {TouchableOpacity} from 'react-native-gesture-handler';
+import {withNavigation} from 'react-navigation';
 const CityCard = props => {
   return (
     <View style={styles.container}>
-      <Text>CityCard</Text>
+      <TouchableOpacity onPress={() => props.navigation.navigate('home')}>
+        <Text>CityCard</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -13,4 +18,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
-export default CityCard;
+export default withNavigation(CityCard);

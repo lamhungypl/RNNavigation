@@ -1,5 +1,12 @@
 import React from 'react';
-import {Platform, StyleSheet, ScrollView, SafeAreaView} from 'react-native';
+import {
+  Platform,
+  StyleSheet,
+  ScrollView,
+  SafeAreaView,
+  TouchableOpacity,
+  Button,
+} from 'react-native';
 import {DrawerItems} from 'react-navigation-drawer';
 
 import {Icon} from 'react-native-elements';
